@@ -11,7 +11,7 @@ const connectDb = async() => {
 app.use(express.json());
 app.use(cors());
 connectDb()
-.then(() => console.log("mongodb connected successfully"))
+.then(() => console.log("mongodb connected successfully "))
 .catch(() => console.log("mongodb error"))
 app.use('/api/v1/event',authMiddleware, eventsRoute);
 app.use('/api/v1/user', usersRoute);
