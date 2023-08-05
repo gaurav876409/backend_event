@@ -4,10 +4,10 @@ const eventsRoute = require("./routes/event.js");
 const usersRoute = require("./routes/user.js")
 const authMiddleware = require("./middleware/auth.js");
 const cors = require('cors');
-const connectDb = async() => {
-   await mongoose.connect("mongodb+srv://gaurav:RoJQEe4ocZmWKV2m@cluster0.5seq6fn.mongodb.net/")
-}
 const app = express();
+const connectDb = async() => {
+   await mongoose.connect("mongodb+srv://gk05908:vera092gR8lyzRSj@cluster0.5seq6fn.mongodb.net/")
+}
 app.use(express.json());
 app.use(cors());
 connectDb()

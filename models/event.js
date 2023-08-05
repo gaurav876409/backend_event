@@ -13,12 +13,6 @@ const eventSchema = {
         type: Date,
         required: true
     },
-    attendees: [
-        {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: 'users',
-        },
-    ]
 };
 
 const Event = mongoose.model('event', eventSchema);
